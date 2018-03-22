@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xujingjie.ve.MainActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="444dp"
+        android:layout_height="232dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/upload"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginStart="162dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/pluse"
+        tools:ignore="VectorDrawableCompat" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="288dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="14dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/upload"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/back"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/forward"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="14dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/upload"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/forward" />
+
+    <ImageButton
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toStartOf="@+id/room_in"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/music" />
+
+    <ImageButton
+        android:id="@+id/room_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toStartOf="@+id/trash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zoom_in" />
+
+    <ImageButton
+        android:id="@+id/trash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trash" />
+
+    <ImageButton
+        android:id="@+id/video_merge"
+        android:layout_width="49dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="47dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toStartOf="@+id/music"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/video_merge" />
+
+    <ImageButton
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toStartOf="@+id/video_merge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/filter" />
+
+    <ImageButton
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toStartOf="@+id/filter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/speed" />
+
+    <ImageButton
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/videoView"
+        app:layout_constraintEnd_toStartOf="@+id/speed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/title" />
+
+</android.support.constraint.ConstraintLayout>
